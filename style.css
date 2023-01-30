@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+   background: url("/680797.jpg");
+   min-height: 100vh;
+   background-size: 130vw 100vh;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+
+   
+   align-items: center;
+
+}
+
+#scoreBox{
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    background-color: aqua;
+    position: absolute;
+    top: 70px;
+    right: 14px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background: linear-gradient(rgb(33, 41, 33),rgb(41, 41, 33));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid red;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    
+}
+.head{
+    background: linear-gradient(rgb(63, 4, 4), rgb(24, 24, 3));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.developer{
+
+    background-color: rgb(237, 248, 237);
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
